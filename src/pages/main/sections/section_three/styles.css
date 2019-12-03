@@ -1,0 +1,26 @@
+.timeline-title-transition-enter {
+    opacity: 0.01;
+}
+
+.timeline-title-transition-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.timeline-details-transition-enter {
+     transform: translate(-100%);
+ }
+
+.timeline-details-transition-enter-active {
+    transform: translate(0%);
+    transition: transform 500ms ease-in-out;
+}
+
+.timeline-achievements-transition-enter {
+    transform: translateY(200%);
+}
+
+.timeline-achievements-transition-enter-active {
+    transform: translateY(0%);
+    transition: transform 500ms ease-in;
+}

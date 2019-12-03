@@ -1,0 +1,16 @@
+.section2-left-container{
+    max-width: 75%;
+}
+
+.section2-right{
+    padding-right: 20px;
+}
+
+.section2-link-button{
+    color: var(--jade);
+    background-color: transparent;
+    border: 0 black;
+    font-size: 19px;
+}
+
+

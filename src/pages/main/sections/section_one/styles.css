@@ -1,0 +1,28 @@
+.section1-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.section1-title{
+    display: inline-block;
+    color: white !important;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+}
+
+.section1-details{
+    font-family: "Open Sans",sans-serif;
+    white-space: pre;
+    color: #8d8d8d;
+    margin-top: 14px;
+    font-size: 12px !important;
+}
+
+.flashing-arrows{
+    position: absolute;
+    bottom: 50px;
+    width: 50px;
+    cursor: pointer;
+}
