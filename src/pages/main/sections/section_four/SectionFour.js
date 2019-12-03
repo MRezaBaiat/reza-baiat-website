@@ -11,7 +11,7 @@ function SectionFour (props) {
   const ismobile = useSelector(state => state.global.windowSize.ismobile);
   return (
     <div className={'section'}>
-      <div className={'left center'}>
+      <div className={ismobile ? 'left' : 'left center'}>
         <div className={'section4-text'}>
           {
             fullyVisible ? <TextyAnim
@@ -24,7 +24,7 @@ function SectionFour (props) {
               About Me
             </TextyAnim> : <div className={'section4-title title'} style={{ color: '#1d1d1d' }}>About Me</div>
           }
-          <div className={'text'} style={{ color: 'white' }}>
+          <div className={'text white'}>
             <p>
                 In 2008 , I found my deepest heart desire in coding,
             </p>

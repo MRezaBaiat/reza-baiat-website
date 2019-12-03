@@ -77,7 +77,7 @@ function SectionScroller (props: Props) {
   });
 
   return (
-    <div ref={ref} className={className} onWheel={onScroll}>
+    <div ref={ref} className={className} onWheel={onScroll} >
       <ReactScrollWheelHandler
         upHandler={upScroll}
         downHandler={downScroll}

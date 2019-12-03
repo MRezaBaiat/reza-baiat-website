@@ -4,6 +4,7 @@ import './styles.css';
 import TimeLine from '../../../../components/composite/time_line/TimeLine';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { useSelector } from 'react-redux';
+import Linkify from 'react-linkify';
 
 function SectionThree (props) {
   const { fullyVisible } = props;
@@ -29,15 +30,16 @@ function SectionThree (props) {
   return (
     <div className={'section'} style={{ flexDirection: 'column' }}>
 
-      {
-        fullyVisible &&
-          <div style={{ alignItems: 'center', justifyContent: 'center' }}>
-            <TimeLine data={WorkTimelineData} index={index} style={{ color: 'white', flex: 1 }} onNextClick={onNextClick} onPreviousClick={onPreviousClick}/>
-            <img src={item.arm} style={{ width: 120, height: 120, borderRadius: 60, boxShadow: '1px 1px 10px white' }}/>
-          </div>
-      }
+      <div style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <TimeLine data={WorkTimelineData} index={index} onNextClick={onNextClick} onPreviousClick={onPreviousClick}/>
+        <div className={'timeline-arm-img-div'}>
+          {
+            fullyVisible && <img src={item.arm} className={'timeline-arm-img'}/>
+          }
+        </div>
+      </div>
 
-      <div style={{ width: '100vw', height: '100%', flexDirection: 'row' }}>
+      <div className={'section3-body'}>
         {
           fullyVisible && renderLeft(index, item)
         }
@@ -53,7 +55,7 @@ function SectionThree (props) {
 const renderRight = (index, item) => (
   <div className={'right'}>
 
-    <h1 key={index} className={'title'} style={{ marginLeft: 50 }}>
+    <h1 key={index} className={'title section3-body-right-title'}>
       Key Achievements :
     </h1>
 
@@ -68,10 +70,11 @@ const renderRight = (index, item) => (
                 timeout={1000}
                 exit={null}
               >
-                <li key={index+'-'+key} style={{ color: 'white' }}>
+                <li key={index+'-'+key} className={'white'}>
                   <div className={'text'} >
                     {achievement}
                   </div>
+                  <br/>
                 </li>
               </CSSTransition>
 
@@ -84,11 +87,11 @@ const renderRight = (index, item) => (
 );
 
 const renderMiddle = () => (
-  <div style={{ height: '25%', backgroundColor: '#09efcc', width: 1.1, marginTop: 'auto', marginBottom: 'auto' }}/>
+  <div className={'section-body-middle'}/>
 );
 const renderLeft = (index, item) => (
   <div className={'left'}>
-    <div style={{ marginLeft: 50, marginRight: 50 }}>
+    <div className={'section3-body-left'}>
       <TransitionGroup>
         <CSSTransition
           key={index+'-title'}
@@ -111,7 +114,9 @@ const renderLeft = (index, item) => (
           <div className={'text'} key={index}>
             {
               item.text.split('\n').map((value) => {
-                return <p>{value}</p>;
+                return (
+                  <Linkify style={{color:'white'}}>{value}<br/></Linkify>
+                );
               })
             }
           </div>

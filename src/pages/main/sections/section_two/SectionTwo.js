@@ -1,11 +1,10 @@
 import SkillsData from '../../../../config/SkillsData';
 import SkillCard from '../../../../components/composite/skill_card/SkillCard';
-import React, { useState } from 'react';
+import React from 'react';
 import images from '../../../../assets/images';
 import Carousel from 'nuka-carousel';
 import { useSelector } from 'react-redux';
 import { getCSSRootValue } from '../../../../helpers';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 const config = {
   transitionMode: 'scroll3d',
@@ -29,13 +28,12 @@ function SectionTwo (props: Props) {
   const windowSize = useSelector(state => state.global.windowSize);
   const { ismobile } = windowSize;
 
-  const arrowsSize = ismobile ? 25 : 50;
   const renderCenterLeftControls = ({ previousSlide }) => (
-    <img style={{ width: arrowsSize, height: arrowsSize, cursor: 'pointer' }} src={images.icon_previous} onClick={previousSlide}/>
+    <img className={'section2-arrow'} src={images.icon_previous} onClick={previousSlide}/>
   );
 
   const renderCenterRightControls = ({ nextSlide }) => (
-    <img style={{ width: arrowsSize, height: arrowsSize, cursor: 'pointer' }} src={images.icon_next} onClick={nextSlide}/>
+    <img className={'section2-arrow'} src={images.icon_next} onClick={nextSlide}/>
   );
 
   return (
