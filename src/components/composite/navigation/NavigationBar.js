@@ -1,7 +1,8 @@
 import React from 'react';
-import './styles.css';
 import images from '../../../assets/images';
 import NavButton from './nav_button/NavButton';
+import { useSelector } from 'react-redux';
+import './styles.css';
 
 interface Props{
   selectedIndex: number,
@@ -9,49 +10,48 @@ interface Props{
 }
 function NavigationBar (props: Props) {
   const { selectedIndex, scrollToIndex } = props;
+  const ismobile = useSelector(state => state.global.windowSize.ismobile);
+
   return (
-    <header className={'main-header'}>
-      <div style={{ width: '100%', flexDirection: 'column', margin: 'auto' }}>
+    <div className={'navbar'}>
+      <div className={ismobile ? 'header-container-mobile' : 'header-container'}>
         {
-          buttonsArray.map((value) => {
+          buttonsArray.map((value, index) => {
             return (
-              <NavButton {...value} selectedIndex={selectedIndex} scrollToIndex={scrollToIndex}/>
+              <NavButton {...value} key={index} indexNo={index} selectedIndex={selectedIndex} scrollToIndex={scrollToIndex}/>
             );
           })
         }
       </div>
-      <div style={{ width: '100%', alignItems: 'center', justifyContent: 'center', position: 'absolute', bottom: 0 }}>
+      {
+        !ismobile && <div style={{ width: '100%', alignItems: 'center', justifyContent: 'center', position: 'absolute', bottom: 0 }}>
 
-      </div>
-    </header>
+        </div>
+      }
+    </div>
   );
 }
 
 const buttonsArray = [
   {
     imgSrc: images.icon_home,
-    title: 'home',
-    indexNo: 0
+    title: 'home'
   },
   {
     imgSrc: images.icon_skills,
-    title: 'skills',
-    indexNo: 1
-  },
-  {
-    imgSrc: images.icon_contact,
-    title: 'contact',
-    indexNo: 2
+    title: 'skills'
   },
   {
     imgSrc: images.icon_code,
-    title: 'my work',
-    indexNo: 3
+    title: 'timeline'
   },
   {
     imgSrc: images.icon_about,
-    title: 'my about',
-    indexNo: 4
+    title: 'about'
+  },
+  {
+    imgSrc: images.icon_contact,
+    title: 'contact'
   }
 ];
 

@@ -1,0 +1,47 @@
+.skill-card-container{
+    align-items: center;
+    box-shadow: 1px 1px 10px white;
+    border-radius: 50px;
+    background-color: white;
+    height: 700px;
+}
+.skills-title-img{
+    width: 50px;
+    margin-bottom: auto;
+    margin-top: 20px;
+}
+.skills-title{
+    color:black;
+    margin-top: 20px;
+    text-align: center;
+}
+.skills-details-row{
+    color:black;
+    font-family:"Open Sans",sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: pre;
+}
+.skill-card-button{
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    text-shadow: 1px 1px 1px grey;
+    background-color:orange;
+    border-radius: 0 0 50px 50px;
+    border-width: 0;
+}
+
+@media (max-width: 600px) {
+    .skill-card-container{
+        height: 500px;
+    }
+    .skills-title{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .skills-title-img{
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,28 @@
+.header-container{
+    width: var(--header-width);
+    height: 250px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: auto;
+}
+
+.header-container-mobile{
+    width: var(--header-width);
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    height: var(--header-height);
+    width: var(--header-width);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #181818;
+    flex-direction: column;
+    z-index: 1;
+}

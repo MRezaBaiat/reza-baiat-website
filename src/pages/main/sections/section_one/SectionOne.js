@@ -10,17 +10,14 @@ const createCharPose = (delay: number = 0) => {
       scale: 1,
       y: 0,
       delay: ({ charIndex }) => delay + charIndex * 50
-      /* transition: ({ charInWordIndex }) => ({
-        type: 'spring',
-        delay: charInWordIndex * 30,
-        stiffness: 500 + charInWordIndex * 150,
-        damping: 10 - charInWordIndex * 1
-      })*/
     }
   };
 };
-
-function SectionOne () {
+interface Props{
+  scrollToIndex: (index: number)=>void
+}
+function SectionOne (props: Props) {
+  const { scrollToIndex } = props;
   return (
     <div className={'section section1-container'}>
       <div className={'section1-title'}>
@@ -36,12 +33,12 @@ function SectionOne () {
             fullStack developer!
         </SplitText>
       </div>
-      <div className={'section1-details font-sub'}>
+      <div className={'section1-details'}>
         {
           'Holy trinity of Mobile / Web / Backend'.split('').join(' ')
         }
       </div>
-      <FlashingArrows className={'flashing-arrows'}/>
+      <FlashingArrows className={'flashing-arrows'} onClick={() => { scrollToIndex(1); }}/>
     </div>
   );
 }

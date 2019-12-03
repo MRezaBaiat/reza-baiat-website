@@ -17,7 +17,7 @@ function NavButton (props: Props) {
   const isSelected = indexNo === selectedIndex;
   const isFocused = isHovered || isSelected;
   return (
-    <div onClick={() => { scrollToIndex(indexNo); }} className={'header-buttons-container'}
+    <div onClick={(e) => { e.preventDefault(); scrollToIndex(indexNo); }} className={'header-buttons-container'}
       onMouseEnter={() => { setHovered(true); }}
       onMouseLeave={() => { setHovered(false); }}>
       <ImageFilter
@@ -27,9 +27,9 @@ function NavButton (props: Props) {
         colorOne={ isFocused ? selectedColor : unselectedColor }
         colorTwo={ isFocused ? selectedColor : unselectedColor }
       />
-      <text className={isHovered ? 'header-text-visible' : 'header-text-invisible'}>
+      <div className={isHovered ? 'header-text-visible' : 'header-text-invisible'}>
         {title.split('').join(' ').toUpperCase()}
-      </text>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+export default {
+  samples_image: require('./samples_image.jpg'),
+  icon_home: require('./icon_home.png'),
+  icon_about: require('./icon_about.png'),
+  icon_skills: require('./icon_skills.png'),
+  icon_code: require('./icon_code.png'),
+  icon_contact: require('./icon_contact.png'),
+  icon_react: require('./icon_react.png'),
+  icon_java: require('./icon_java.png'),
+  icon_android: require('./icon_android.png'),
+  icon_nodejs: require('./icon_nodejs.png'),
+  icon_next: require('./icon_next.png'),
+  icon_previous: require('./icon_previous.png'),
+  arrow_down: require('./arrow_down.png'),
+  arm_hamyar_aval: require('./arm_hamyar_aval.png'),
+  arm_pixels_and_code: require('./arm_pixels_and_code.png'),
+  arm_zubale: require('./arm_zubale.png'),
+  about_me: require('./about_me.png'),
+  icon_gmail: require('./icon_gmail.png'),
+  icon_whatsapp: require('./icon_whatsapp.png'),
+  icon_linkedin: require('./icon_linkedin.png'),
+  icon_skype: require('./icon_skype.png')
+};

@@ -1,13 +1,23 @@
 import React from 'react';
 import './styles.css';
 import images from '../../../../assets/images';
+import TextyAnim from 'rc-texty';
+require('rc-texty/assets/index.css');
 
-function SectionFive () {
+function SectionFive (props) {
+  const { fullyVisible } = props;
   return (
-    <div className={'section center'}>
-      <div className={'title'} style={{ marginBottom: 30 }}>
-            Contact Me
-      </div>
+    <div className={'section center'} style={{ flexDirection: 'column' }}>
+      {
+        fullyVisible ? <TextyAnim
+          type={'scaleBig'}
+          duration={500}
+          className={'title section5-title'}
+          style={{ flexDirection: 'row', marginBottom: 30 }}
+        >
+          Contact Me
+        </TextyAnim> : <div className={'section4-title title'} style={{ color: '#1d1d1d' }}>Contact Me</div>
+      }
       <div style={{ color: 'white', alignItems: 'flex-start' }}>
         <Row src={images.icon_gmail} link={'untouchable.rb@gmail.com'} onClick={() => {
           window.open('https://mail.google.com/mail/u/0/?view=cm&fs=1&to=Untouchable.rb@gmail.com&tf=1', '_blank');

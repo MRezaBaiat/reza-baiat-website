@@ -1,10 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import './index.mobile.css';
 import * as serviceWorker from './serviceWorker';
+import initStore from './config/initStore';
+import { Provider } from 'react-redux';
+import ErrorBoundary from './components/composite/errorboundary/ErrorBoundary';
+import { BrowserRouter } from 'react-router-dom';
+import { Route, Router, Switch } from 'react-router';
+import { history } from './helpers/NavigationHelper';
+import MainScreen from './pages/main/MainScreen';
+import { actionWindowSizeChanged } from './redux/actions';
+import SamplesScreen from './pages/samples/SamplesScreen';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export const store = initStore();
+
+window.addEventListener('resize', () => {
+  store.dispatch(actionWindowSizeChanged());
+});
+
+ReactDOM.render(
+  <Provider store={store}>
+    <ErrorBoundary>
+      <BrowserRouter>
+        <Router history={history}>
+          <Switch>
+            <Route path={'/'} exact component={MainScreen}/>
+            <Route path={'/samples'} component={SamplesScreen}/>
+          </Switch>
+        </Router>
+      </BrowserRouter>
+    </ErrorBoundary>
+  </Provider>
+
+  , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

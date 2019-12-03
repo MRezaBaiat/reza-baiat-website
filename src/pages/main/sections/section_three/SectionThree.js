@@ -4,11 +4,18 @@ import './styles.css';
 import TimeLine from '../../../../components/composite/time_line/TimeLine';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { useSelector } from 'react-redux';
-import VisibilitySensor from 'react-visibility-sensor';
 
-function SectionThree () {
+function SectionThree (props) {
+  const { fullyVisible } = props;
   const [index, setIndex] = useState(2);// 2 for first animation fix
-  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    if (fullyVisible) {
+      setIndex(0);
+    } else {
+      setIndex(2);
+    }
+  }, [fullyVisible]);
 
   const onNextClick = () => {
     setIndex(index+1);
@@ -20,39 +27,26 @@ function SectionThree () {
   const item = WorkTimelineData[index];
 
   return (
-    <VisibilitySensor
-      partialVisibility
-      onChange={(visible) => {
-        console.log('visi ? '+visible);
-        if (visible) {
-          setTimeout(() => {
-            setVisible(true);
-            setIndex(0);
-          }, 200);
-        }
-      }}>
-      <div className={'section'} style={{ flexDirection: 'column' }}>
+    <div className={'section'} style={{ flexDirection: 'column' }}>
 
-        {
-          visible &&
+      {
+        fullyVisible &&
           <div style={{ alignItems: 'center', justifyContent: 'center' }}>
             <TimeLine data={WorkTimelineData} index={index} style={{ color: 'white', flex: 1 }} onNextClick={onNextClick} onPreviousClick={onPreviousClick}/>
             <img src={item.arm} style={{ width: 120, height: 120, borderRadius: 60, boxShadow: '1px 1px 10px white' }}/>
           </div>
+      }
+
+      <div style={{ width: '100vw', height: '100%', flexDirection: 'row' }}>
+        {
+          fullyVisible && renderLeft(index, item)
         }
-
-        <div style={{ width: '100vw', height: '100%', flexDirection: 'row' }}>
-          {
-            visible && renderLeft(index, item)
-          }
-          {
-            visible && !ismobile && renderMiddle()
-          }
-          {visible && !ismobile && renderRight(index, item)}
-        </div>
+        {
+          fullyVisible && !ismobile && renderMiddle()
+        }
+        {fullyVisible && !ismobile && renderRight(index, item)}
       </div>
-    </VisibilitySensor>
-
+    </div>
   );
 }
 

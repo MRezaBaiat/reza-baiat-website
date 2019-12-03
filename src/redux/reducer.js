@@ -1,27 +1,32 @@
 import * as actions from './actions';
+import { getCSSRootValue } from '../helpers';
 
 export interface InitialState {
-  data:string,
-  connected:boolean
+  windowSize:{
+    width:number,
+    height:number,
+    ismobile:boolean
+  }
 }
 
 const initialState: InitialState = {
-  data: 'intial data!',
-  connected: false
+  windowSize: {
+    width: window.innerWidth,
+    height: window.innerHeight,
+    ismobile: window.innerWidth <= getCSSRootValue('--mobile-width')
+  }
 };
 
 const reducer = (state = initialState, action: { type: any;payload:any }) => {
   switch (action.type) {
-    case actions.ACTION_SET_DATA:
+    case actions.ACTION_WINDOW_SIZE_CHANGE:
       return {
         ...state,
-        data: action.payload
+        windowSize: {
+          ...action.payload
+        }
       };
-    case actions.ACTION_SET_CONNECTED:
-      return {
-        ...state,
-        connected: action.payload
-      };
+
     default:
       return state;
   }
