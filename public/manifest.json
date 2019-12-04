@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Controlled using helmet",
+  "name": "Controlled using helmet",
   "icons": [
     {
       "src": "logo16.png",

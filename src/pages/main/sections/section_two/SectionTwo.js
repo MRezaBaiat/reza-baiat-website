@@ -47,13 +47,13 @@ function SectionTwo (props: Props) {
             </h1>
             <div className={'text'}>
               <p>
-                Most of my experiences are dedicated to mobile development , Creating flawless , pixel perfect and super performant applications in React Native & Android.
+                Most of my experiences are dedicated to mobile development , creating flawless , pixel perfect and super performant applications in React Native & Android.
               </p>
               <p>
-                Now days my main focuses are React & React Native , and i have deep understanding of these 2 masterpieces.
+                Now days my main focuses are React & React Native , and thanks to my unique background in development , i can do complex projects in the least time possible.
               </p>
               <p>
-                Most of the times in the React world i develop using (Flow,Typescript,ESLint,Prettier,Git,Jira) .
+                Most of the times in the React world i take advantage of techs like Flow, Typescript, ESLint, Prettier, Git, Jira .
               </p>
               <p>
                 I also know techs like (CSS,HTML,JSX) and all other tools that i need to develop React/React Native projects.

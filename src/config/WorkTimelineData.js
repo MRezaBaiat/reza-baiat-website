@@ -11,12 +11,12 @@ const WorkTimelineData = [
       'Introduced exciting features, such as groups, channels, posts, video call, voice call, PV, high level securities, and map with super nice visual appearance.',
       'Commended by management for excellent performance while serving as full stack developer for the company'
     ],
-    text: 'Hamyar aval is a knowledge expedition company .\n' +
-      '    Created first taxi finder application in country with user-friendly features,\n' +
+    text: 'Hamyar aval is a knowledge expedition company and\n' +
+      '    There i managed to develop first taxi finder application in the country with user-friendly features,\n' +
       '    including printer (to draw the route travelled and print the receipt with all info about the travel),\n' +
       '    Card reader (to allow the customers to pay with bank card),an android device (to act as a phone),\n' +
       '    and RFID reader (to identify the driver using RFID cards).\n\n' +
-      '    Technologies included were android ,java ,react-native'
+      '    Technologies included were android , java , react-native'
   },
   {
     title: 'Pixelsandcode',
@@ -38,7 +38,7 @@ const WorkTimelineData = [
       ' Held accountable for designing new features, collaborating with cross-functional teams, \n' +
       ' testing code, fixing bugs, and improving application efficiency. Gained valuable knowledge of REST APIs,\n' +
       ' the document request model, XMPP, and offline storages.\n\n'+
-      ' Technologies included were react ,react-native ,android'
+      ' Technologies included were react , react-native , android'
   },
   {
     title: 'Zubale',
@@ -46,11 +46,11 @@ const WorkTimelineData = [
     to: 2019,
     arm: images.arm_zubale,
     achievements: ['Developed and implemented the features, such as cash payment, map, clustering, database, and a new code base into the application'],
-    text: 'This company was located in mexico you can find it here : https://play.google.com/store/apps/details?id=mx.com.topup&hl=en\n' +
+    text: 'This company was located in mexico you can find our app here : https://play.google.com/store/apps/details?id=mx.com.topup&hl=en\n' +
       'the first thing that i as a senior react-native developer did there was \n' +
       'Recruited as subject matter expert react native developer to resolve complex issues.\n' +
       'Delivered expert advice to other developers about resolving issues and best technologies to use\n\n'+
-      'I was working in android ,react-native there'
+      'I was working on react-native and android there'
   }
 ];
 
