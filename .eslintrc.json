@@ -1,0 +1,37 @@
+{
+    "extends": ["standard","standard-flow"],
+    "parser": "babel-eslint",
+    "settings": {
+        "import/ignore": [".css$","node_modules/*"]
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "flowtype"
+    ],
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "rules": {
+        "semi": [2, "always"],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "off",
+        "no-unused-vars": "warn",
+        "no-useless-escape": "warn",
+        "react/jsx-uses-vars": 2,
+        "react/jsx-uses-react": 2
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    }
+}
