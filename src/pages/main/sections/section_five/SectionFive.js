@@ -1,14 +1,15 @@
 import React from 'react';
-import './styles.css';
 import images from '../../../../assets/images';
 import TextyAnim from 'rc-texty';
+import { useSelector } from 'react-redux';
 require('rc-texty/assets/index.css');
 
 function SectionFive (props) {
   const { fullyVisible } = props;
+  const ismobile = useSelector(state => state.global.windowSize.ismobile);
   return (
     <div className={'section center'}>
-      <div className={'center'} style={{ flexDirection: 'row' }}>
+      <div className={'center section5-container'}>
         {
           fullyVisible ? <TextyAnim
             type={'scaleBig'}
@@ -18,7 +19,7 @@ function SectionFive (props) {
             Contact Me
           </TextyAnim> : <div className={'section5-title title'} style={{ color: '#1d1d1d' }}>Contact Me</div>
         }
-        <div className={'section5-container'}>
+        <div className={'section5-rows-container'}>
           <Row src={images.icon_gmail} link={'untouchable.rb@gmail.com'} onClick={() => {
             window.open('https://mail.google.com/mail/u/0/?view=cm&fs=1&to=Untouchable.rb@gmail.com&tf=1', '_blank');
           }}/>

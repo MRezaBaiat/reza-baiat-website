@@ -1,4 +1,7 @@
 .section5-container{
+    flex-direction: row;
+}
+.section5-rows-container{
     color: white;
     align-items: flex-start;
 }

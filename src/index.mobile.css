@@ -47,4 +47,11 @@
         width:25px;
         height: 25px;
     }
+    .section5-container{
+        flex-direction: column;
+    }
+    .section5-title{
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
 }
