@@ -11,7 +11,7 @@ const WorkTimelineData = [
       'Introduced exciting features, such as groups, channels, posts, video call, voice call, PV, high level securities, and map with super nice visual appearance.',
       'Commended by management for excellent performance while serving as full stack developer for the company'
     ],
-    text: 'Hamyar aval is a knowledge expedition company and\n' +
+    text: 'Hamyar aval is a knowledge enterprise company and\n' +
       '    There i managed to develop first taxi finder application in the country with user-friendly features,\n' +
       '    including printer (to draw the route travelled and print the receipt with all info about the travel),\n' +
       '    Card reader (to allow the customers to pay with bank card),an android device (to act as a phone),\n' +
@@ -50,7 +50,7 @@ const WorkTimelineData = [
       'the first thing that i as a senior react-native developer did there was \n' +
       'Recruited as subject matter expert react native developer to resolve complex issues.\n' +
       'Delivered expert advice to other developers about resolving issues and best technologies to use\n\n'+
-      'I was working on react-native and android there'
+      'I was working on react , react-native and android there'
   }
 ];
 
