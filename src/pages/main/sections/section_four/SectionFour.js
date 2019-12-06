@@ -25,7 +25,7 @@ function SectionFour (props) {
               About Me
             </TextyAnim> : <div className={'section4-title title'} style={{ color: '#1d1d1d' }}>About Me</div>
           }
-          <div className={'text white'} style={{ lineHeight: 3 }}>
+          <div className={'text white'} style={{ lineHeight: 2 }}>
             {
               Strings.about.split('\n').map((value) => {
                 return (
