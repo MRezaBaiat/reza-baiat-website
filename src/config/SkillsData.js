@@ -24,10 +24,10 @@ const SkillsData = [
   },
   {
     name: 'NodeJS',
-    isIncoming: true,
+    isIncoming: false,
     iconSrc: images.icon_nodejs,
     routePath: '/skills/nodejs',
-    details: []
+    details: ['Express', 'Express Gateway', 'GraphQL', 'Joi', 'Mongoose', 'Sequelize', 'Passport', 'JWT', 'OAuth 2.0', 'Redis', 'Security']
   },
   {
     name: 'Android',

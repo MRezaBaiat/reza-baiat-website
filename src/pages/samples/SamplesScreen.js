@@ -25,29 +25,36 @@ function SamplesScreen (props) {
 const getRenderer = (hash: string) => {
   switch (hash.toLowerCase().split(' ').splice('%20').join('')) {
     case '#react':
-      return renderer(SkillsData[1]);
+      return renderer('For a kick start , you may check the react code of this site at :', 'https://github.com/MRezaBaiat/reza-baiat-website');
     case '#reactnative':
-      return renderer(SkillsData[0]);
+      return renderer('For a kick start , you may check the react code of this site at :', 'https://github.com/MRezaBaiat/reza-baiat-website');
     case '#java':
-      return renderer(SkillsData[2]);
+      return renderer('For a kick start , you may check the react code of this site at :', 'https://github.com/MRezaBaiat/reza-baiat-website');
     case '#android':
-      return renderer(SkillsData[4]);
+      return renderer('For a kick start , you may check the react code of this site at :', 'https://github.com/MRezaBaiat/reza-baiat-website');
     case '#nodejs':
-      return renderer(SkillsData[3]);
+      return renderer('For a kick start , you may check my express boilerplate at :', 'https://github.com/MRezaBaiat/nodejs-express-boilerplate');
     default:
-      return renderer(SkillsData[0]);
+      return renderer('For a kick start , you may check the react code of this site at :', 'https://github.com/MRezaBaiat/reza-baiat-website');
   }
 };
 
-const renderer = (skill) => (
-  <div className={'text'} style={{ marginTop: 50 }}>
-    For a kick start , you may check the react code of this site at :
-    <br/>
-    <br/>
-    <a href={'https://github.com/MRezaBaiat/reza-baiat-website'} style={{ color: getCSSRootValue('--jade') }} target="_blank">
-      https://github.com/MRezaBaiat/reza-baiat-website
-    </a>
-  </div>
-);
+const renderer = (title, link) => {
+  return (
+    <div className={'text'} style={{ marginTop: 50 }}>
+      {
+        title
+      }
+      <br/>
+      <br/>
+      <a href={link}
+        style={{ color: getCSSRootValue('--jade') }} target="_blank">
+        {
+          link
+        }
+      </a>
+    </div>
+  );
+};
 
 export default React.memo(SamplesScreen);
