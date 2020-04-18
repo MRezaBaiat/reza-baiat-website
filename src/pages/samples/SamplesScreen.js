@@ -1,6 +1,5 @@
 import React from 'react';
 import images from '../../assets/images';
-import SkillsData from '../../config/SkillsData';
 import { getCSSRootValue } from '../../helpers';
 
 function SamplesScreen (props) {

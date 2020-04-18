@@ -23,9 +23,9 @@ function SectionFive (props) {
           <Row src={images.icon_gmail} link={'untouchable.rb@gmail.com'} onClick={() => {
             window.open('https://mail.google.com/mail/u/0/?view=cm&fs=1&to=Untouchable.rb@gmail.com&tf=1', '_blank');
           }}/>
-          <Row src={images.icon_whatsapp} link={'+989305211601'} onClick={() => {
+          {/* <Row src={images.icon_whatsapp} link={'+989305211601'} onClick={() => {
             window.open('https://wa.me/989305211601', '_blank');
-          }}/>
+          }}/> */}
           <Row src={images.icon_skype} link={'untouchable.rb'} onClick={() => {
             window.open('skype:Untouchable.rb?chat', '_blank');
           }}/>

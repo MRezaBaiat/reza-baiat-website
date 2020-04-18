@@ -1,5 +1,5 @@
 import React, { Children, useEffect, useReducer, useRef, useState } from 'react';
-/* import ReactScrollWheelHandler from 'react-scroll-wheel-handler';*/
+/* import ReactScrollWheelHandler from 'react-scroll-wheel-handler'; */
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import ReactDOM from 'react-dom';
 import { useSelector } from 'react-redux';
@@ -38,7 +38,7 @@ function SectionScroller (props: Props) {
       /* const child = children[selectedIndex];
       const lastChild = children[previousIndex];
       lastChild && lastChild.type.type.onInVisible && lastChild.type.type.onInVisible();
-      child && child.type.type.onVisible && child.type.type.onVisible();*/
+      child && child.type.type.onVisible && child.type.type.onVisible(); */
       setPreviousIndex(selectedIndex);
     });
   }, [selectedIndex]);
