@@ -2,6 +2,26 @@ import images from '../assets/images';
 
 const WorkTimelineData = [
   {
+    title: 'Matap',
+    from: 2019,
+    to: 2020,
+    arm: images.arm_matap,
+    achievements: ['Solo producing four different sides of Mobile app , Web app (PWA) , Admin panel , Server side.',
+      'Solving a lot of problems including how to deploy a mobile like messenger in web (PWA)',
+      'Developing voice call and video call client / server with great quality and satisfaction.',
+      'Providing a fail safe backend using nodejs & kubernetes'
+    ],
+    text: 'In short matap project was providing a link between doctors and their patients by allowing to book ,' +
+      'chat , transfer files, voice call and video call.\n' +
+      'The clients were built for mobile & web and the server was running on a kubernetes on the cloud.' +
+      'I, who was the only developer in the company used no existing services in the app and all of the techs' +
+      'including socket & WEBRTC were locally developed.\n \n' +
+      'Here is the link to the app : \n' +
+      'https://play.google.com/store/apps/details?id=ir.matap.app' + ' \n' +
+      'and the link to the web mobile app :' +
+      'https://matap.site'
+  },
+  {
     title: 'Hamyar aval',
     from: 2010,
     to: 2015,
@@ -37,7 +57,7 @@ const WorkTimelineData = [
       ' Developed expert level understanding of working with third-party libraries, including new and pre used.\n' +
       ' Held accountable for designing new features, collaborating with cross-functional teams, \n' +
       ' testing code, fixing bugs, and improving application efficiency. Gained valuable knowledge of REST APIs,\n' +
-      ' the document request model, XMPP, and offline storages.\n\n'+
+      ' the document request model, XMPP, and offline storages.\n\n' +
       ' Technologies included were react , react-native , android'
   },
   {
@@ -49,7 +69,7 @@ const WorkTimelineData = [
     text: 'This company was located in mexico you can find our app here : https://play.google.com/store/apps/details?id=mx.com.topup&hl=en\n' +
       'the first thing that i as a senior react-native developer did there was \n' +
       'Recruited as subject matter expert react native developer to resolve complex issues.\n' +
-      'Delivered expert advice to other developers about resolving issues and best technologies to use\n\n'+
+      'Delivered expert advice to other developers about resolving issues and best technologies to use\n\n' +
       'I was working on react , react-native and android there'
   }
 ];

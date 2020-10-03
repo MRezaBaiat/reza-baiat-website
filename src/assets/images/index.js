@@ -13,6 +13,7 @@ export default {
   icon_previous: require('./icon_previous.png'),
   arrow_down: require('./arrow_down.png'),
   arm_hamyar_aval: require('./arm_hamyar_aval.png'),
+  arm_matap: require('./arm_matap.png'),
   arm_pixels_and_code: require('./arm_pixels_and_code.png'),
   arm_zubale: require('./arm_zubale.png'),
   about_me: require('./about_me.png'),
