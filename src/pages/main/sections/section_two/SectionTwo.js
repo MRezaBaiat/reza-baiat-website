@@ -50,13 +50,13 @@ function SectionTwo (props: Props) {
                 Most of my experiences are dedicated to mobile development , creating flawless , pixel perfect and super performant applications in React Native & Android.
               </p>
               <p>
-                Now days my main focuses are React & React Native , and thanks to my unique background in development , i can do complex projects in the least time possible.
+                Now days my main focuses are ReactJS & React Native & Nodejs , and thanks to my unique background in development , i can do complex projects in the least time possible.
               </p>
               <p>
                 Most of the times in the React world i take advantage of techs like Flow, Typescript, ESLint, Prettier, Git, Jira .
               </p>
               <p>
-                I also know techs like (CSS,HTML,JSX) and all other tools that i need to develop React/React Native projects.
+                I also know techs like kubernetes , docker and CSS, HTML, JSX and all other tools that i need to develop ReactJS/React Native/NodeJS projects.
               </p>
               <p>
                 If you had any questions , please do not hesitate to<button onClick={() => { scrollToIndex(4); }} className={'section2-link-button'}>contact</button>me.
