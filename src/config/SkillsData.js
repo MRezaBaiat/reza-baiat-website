@@ -27,7 +27,7 @@ const SkillsData = [
     isIncoming: false,
     iconSrc: images.icon_nodejs,
     routePath: '/skills/nodejs',
-    details: ['Express', 'Express Gateway', 'GraphQL', 'Joi', 'Mongoose', 'Sequelize', 'Passport', 'JWT', 'OAuth 2.0', 'Redis', 'Security']
+    details: ['Express', 'Express Gateway', 'Kubernetes', 'Docker', 'GraphQL', 'Joi', 'Mongoose', 'Sequelize', 'Passport', 'JWT', 'OAuth 2.0', 'Redis', 'Security']
   },
   {
     name: 'Android',
