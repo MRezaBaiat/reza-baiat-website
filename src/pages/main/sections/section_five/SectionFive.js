@@ -30,7 +30,7 @@ function SectionFive (props) {
             window.open('skype:Untouchable.rb?chat', '_blank');
           }}/>
           <Row src={images.icon_linkedin} link={'in/reza-baiat-b945a9114'} onClick={() => {
-            window.open('https://www.linkedin.com/in/reza-baiat-b945a9114/', '_blank');
+            window.open('https://www.linkedin.com/in/reza-bayat-b802181b6/', '_blank');
           }}/>
         </div>
       </div>
