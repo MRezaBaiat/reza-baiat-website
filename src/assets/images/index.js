@@ -9,6 +9,7 @@ export default {
   icon_java: require('./icon_java.png'),
   icon_android: require('./icon_android.png'),
   icon_nodejs: require('./icon_nodejs.png'),
+  icon_general_skills: require('./icon_general_skills.png'),
   icon_next: require('./icon_next.png'),
   icon_previous: require('./icon_previous.png'),
   arrow_down: require('./arrow_down.png'),
