@@ -4,39 +4,42 @@ const WorkTimelineData = [
   {
     title: 'Matap',
     from: 2019,
-    to: 2020,
+    to: 2021,
     arm: images.arm_matap,
-    achievements: ['Solo producing four different sides of Mobile app , Web app (PWA) , Admin panel , Server side.',
-      'Solving a lot of problems including how to deploy a mobile like messenger in web (PWA)',
-      'Developing voice call and video call client / server with great quality and satisfaction.',
-      'Providing a fail safe backend using nodejs & kubernetes'
+    achievements: [
+      'Solo producing all four different sides (Mobile app , Web app (PWA) , Admin panel , Backend) \n' +
+      'https://play.google.com/store/apps/details?id=ir.matap.app',
+      'Solving lots of problems including a way to deploy a real mobile like messenger in web (PWA) \n' +
+      'https://pwa.matap.site',
+      'Single source code for android & ios & web using react-native web',
+      'Developing voice call and video call client / server with great quality and satisfaction .here is one \n' +
+      'test example of my fullstack developed conference app https://conference.lifemate.me',
+      'Providing a fail safe backend using Expressjs & kubernetes & MongoDB & Redis',
+      'Managing kubernetes , git, backups, etc...',
+      'Using single code base for android, mobile & web'
     ],
-    text: 'In short matap project was providing a link between doctors and their patients by allowing to book ,' +
-      'chat , transfer files, voice call and video call.\n' +
-      'The clients were built for mobile & web and the server was running on a kubernetes on the cloud.' +
-      'I, who was the only developer in the company used no existing services in the app and all of the techs' +
-      'including socket & WEBRTC were locally developed.\n \n' +
+    text: 'Matap is a medical application which provides a communication link between doctors and patients by \n' +
+      'providing services like booking , chat , transfer files, voice call and video call , etc...\n' +
+      'Matap appplication has all the functionallities of the whatsapp but with a gateway in middle. Client apps \n' +
+      'are made for mobile (android & ios) & web (pwa) and the server is running on a kubernetes infrastructure. \n' +
+      'I, as the solo fullstack developer of the company was instructed not to use any existing services in the \n' +
+      'app and so all of the technologies including socket & WEBRTC were natively developed' + '\n \n' +
       'Here is the link to the app : \n' +
       'https://play.google.com/store/apps/details?id=ir.matap.app' + ' \n' +
       'and the link to the web mobile app :' +
-      'https://matap.site'
+      'https://pwa.matap.site'
   },
   {
-    title: 'Hamyar aval',
-    from: 2010,
-    to: 2015,
-    arm: images.arm_hamyar_aval,
-    achievements: ['Designed and developed a messenger with all capabilities of telegram, whatsapp, and all other messengers.',
-      'Developed backend with a self made video call due to security for the messenger project.',
-      'Introduced exciting features, such as groups, channels, posts, video call, voice call, PV, high level securities, and map with super nice visual appearance.',
-      'Commended by management for excellent performance while serving as full stack developer for the company'
-    ],
-    text: 'Hamyar aval is a knowledge enterprise company and\n' +
-      '    There i managed to develop first taxi finder application in the country with user-friendly features,\n' +
-      '    including printer (to draw the route travelled and print the receipt with all info about the travel),\n' +
-      '    Card reader (to allow the customers to pay with bank card),an android device (to act as a phone),\n' +
-      '    and RFID reader (to identify the driver using RFID cards).\n\n' +
-      '    Technologies included were android , java , react-native'
+    title: 'Zubale',
+    from: 2018,
+    to: 2019,
+    arm: images.arm_zubale,
+    achievements: ['Developed and implemented the features, such as cash payment, map, clustering, database, and a new code base into the application'],
+    text: 'This company was located in mexico you can find our app here : https://play.google.com/store/apps/details?id=mx.com.topup&hl=en\n' +
+      'the first thing that i as a senior react-native developer did there was \n' +
+      'Recruited as subject matter expert react native developer to resolve complex issues.\n' +
+      'Delivered expert advice to other developers about resolving issues and best technologies to use\n\n' +
+      'I was working on react , react-native and android there'
   },
   {
     title: 'Pixelsandcode',
@@ -61,16 +64,21 @@ const WorkTimelineData = [
       ' Technologies included were react , react-native , android'
   },
   {
-    title: 'Zubale',
-    from: 2018,
-    to: 2019,
-    arm: images.arm_zubale,
-    achievements: ['Developed and implemented the features, such as cash payment, map, clustering, database, and a new code base into the application'],
-    text: 'This company was located in mexico you can find our app here : https://play.google.com/store/apps/details?id=mx.com.topup&hl=en\n' +
-      'the first thing that i as a senior react-native developer did there was \n' +
-      'Recruited as subject matter expert react native developer to resolve complex issues.\n' +
-      'Delivered expert advice to other developers about resolving issues and best technologies to use\n\n' +
-      'I was working on react , react-native and android there'
+    title: 'Hamyar aval',
+    from: 2010,
+    to: 2015,
+    arm: images.arm_hamyar_aval,
+    achievements: ['Designed and developed a messenger with all capabilities of telegram, whatsapp, and all other messengers.',
+      'Developed backend with a self made video call due to security for the messenger project.',
+      'Introduced exciting features, such as groups, channels, posts, video call, voice call, PV, high level securities, and map with super nice visual appearance.',
+      'Commended by management for excellent performance while serving as full stack developer for the company'
+    ],
+    text: 'Hamyar aval is a knowledge enterprise company and\n' +
+      '    There i managed to develop first taxi finder application in the country with user-friendly features,\n' +
+      '    including printer (to draw the route travelled and print the receipt with all info about the travel),\n' +
+      '    Card reader (to allow the customers to pay with bank card),an android device (to act as a phone),\n' +
+      '    and RFID reader (to identify the driver using RFID cards).\n\n' +
+      '    Technologies included were android , java , react-native'
   }
 ];
 
