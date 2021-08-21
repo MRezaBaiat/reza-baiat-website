@@ -13,7 +13,7 @@ const SkillsData = [
     isIncoming: false,
     iconSrc: images.icon_react,
     routePath: '/skills/reactnative',
-    details: ['redux , thunk , persist', 'mobx', 'react-navigation', 'expo & react-native-web', 'axios', 'socket.io', 'realm', 'maps & positioning', 'react-native-webrtc', 'mediasoup', 'code push', 'push notifications', 'react-native-firebase', 'service-workers', 'pwa & offline first design', 'HOCs , Containers , hooks']
+    details: ['redux , thunk , persist', 'mobx', 'react-navigation', 'expo & react-native-web', 'axios', 'socket.io', 'realm', 'maps & positioning', 'react-native-webrtc', 'mediasoup', 'code push', 'push notifications', 'react-native-firebase', 'service-workers', 'pwa & offline first design', 'HOCs , containers , hooks']
   },
   {
     name: 'Java',
